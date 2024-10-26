@@ -1,0 +1,344 @@
+{
+	"info": {
+		"_postman_id": "d5326cd9-0c74-4bcb-88ca-229102e08705",
+		"name": "Ideanest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24012685"
+	},
+	"item": [
+		{
+			"name": "organization",
+			"item": [
+				{
+					"name": "createOrganization",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzFjZjk4ZDFjODdlNjA2MzRkMjNlMGYiLCJlbWFpbCI6Im9zYW1haG9zc2lueUBnbWFpbC5jb20iLCJpYXQiOjE3Mjk5NjA1MzMsImV4cCI6MTcyOTk2MTQzM30.sc2xzz9lbOdW9rBa3V-kxI9uHh61Xe9KZ57Szjabj40",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"NSA\",\r\n    \"description\":\"organization\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/organization",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"organization"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateOrganization",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzFjZjk4ZDFjODdlNjA2MzRkMjNlMGYiLCJlbWFpbCI6Im9zYW1haG9zc2lueUBnbWFpbC5jb20iLCJpYXQiOjE3Mjk5NjA1MzMsImV4cCI6MTcyOTk2MTQzM30.sc2xzz9lbOdW9rBa3V-kxI9uHh61Xe9KZ57Szjabj40",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"NSSA\",\r\n    \"description\":\"organization organization\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/organization/671d1a92603b641da9d1e394",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"organization",
+								"671d1a92603b641da9d1e394"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllOrgs",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzFjZjk4ZDFjODdlNjA2MzRkMjNlMGYiLCJlbWFpbCI6Im9zYW1haG9zc2lueUBnbWFpbC5jb20iLCJpYXQiOjE3Mjk5NTYxMTEsImV4cCI6MTcyOTk1NzAxMX0.bcz1dkTefzLbmeo9ha_hywj5JCXrai0gnENkV28VVlg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/organization",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"organization"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOrg",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzFjZjk4ZDFjODdlNjA2MzRkMjNlMGYiLCJlbWFpbCI6Im9zYW1haG9zc2lueUBnbWFpbC5jb20iLCJpYXQiOjE3Mjk5NjA1MzMsImV4cCI6MTcyOTk2MTQzM30.sc2xzz9lbOdW9rBa3V-kxI9uHh61Xe9KZ57Szjabj40",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/organization/671d1a92603b641da9d1e394",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"organization",
+								"671d1a92603b641da9d1e394"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteOrg",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzFjZjk4ZDFjODdlNjA2MzRkMjNlMGYiLCJlbWFpbCI6Im9zYW1haG9zc2lueUBnbWFpbC5jb20iLCJpYXQiOjE3Mjk5NjA1MzMsImV4cCI6MTcyOTk2MTQzM30.sc2xzz9lbOdW9rBa3V-kxI9uHh61Xe9KZ57Szjabj40",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/organization/671d04c40641c34505ff3782",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"organization",
+								"671d04c40641c34505ff3782"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "invite",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzFjZjk4ZDFjODdlNjA2MzRkMjNlMGYiLCJlbWFpbCI6Im9zYW1haG9zc2lueUBnbWFpbC5jb20iLCJpYXQiOjE3Mjk5NjA4MzEsImV4cCI6MTcyOTk2MTczMX0.vYAydtTuL13BIqFRVut5vEKyXckJZ_hl3Q6rDORdUEo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_email\":\"osama@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/organization/671d1a92603b641da9d1e394/invite",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"organization",
+								"671d1a92603b641da9d1e394",
+								"invite"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"osama\",\r\n    \"email\": \"mano@gmail.com\",\r\n    \"password\": \"12345678_/aA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"osamahossiny@gmail.com\",\r\n    \"password\": \"12345678_/aA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzFjZjk4ZDFjODdlNjA2MzRkMjNlMGYiLCJlbWFpbCI6Im9zYW1haG9zc2lueUBnbWFpbC5jb20iLCJpYXQiOjE3Mjk5NTIxNjUsImV4cCI6MTczMDU1Njk2NX0.uuUOB17_zwXTMKPdWFj_tl_0XJRPakPfuc7Eotu_g88",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refresh",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzFjZjk4ZDFjODdlNjA2MzRkMjNlMGYiLCJlbWFpbCI6Im9zYW1haG9zc2lueUBnbWFpbC5jb20iLCJpYXQiOjE3Mjk5NTIxNTIsImV4cCI6MTczMDU1Njk1Mn0.aA2jGSUjQ-BsVo9W9_VGBYLkvDr6DFNTnr-8mccPcZw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/refresh-token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"refresh-token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
