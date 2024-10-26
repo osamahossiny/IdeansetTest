@@ -28,12 +28,12 @@ services:
             context: ./server
         container_name: server
         ports:
-            - "3000:3000"
+            - "8080:8080"
         depends_on:
             - mongodb
         environment:
             - DB_URL=mongodb://mongodb:27017/ideanest
-            - PORT=3000
+            - PORT=8080
             - ACCESS_TOKEN_SECRET=pe3JJMOfV1mZneuLgZnFQnd3dMzHZax3
             - REFRESH_TOKEN_SECRET=dmx06prN1VmAxi0PSSnDXOGOJoRX39qZ
         networks:
